@@ -1,10 +1,6 @@
-Certainly! Below is a template for a basic GitHub README for an ORM project focused on cinema management. Remember to customize it based on the specifics of your project.
 
 ```markdown
 # Cinema Management ORM Project
-
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/yourusername/your-repo/CI/main)](https://github.com/yourusername/your-repo/actions)
 
 Welcome to the Cinema Management ORM Project! This project provides a robust and flexible Object-Relational Mapping (ORM) solution for managing cinemas and related entities.
 
