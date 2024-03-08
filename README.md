@@ -1,60 +1,92 @@
 
-```markdown
-# Cinema Management ORM Project
+# Cinema Management System
 
-Welcome to the Cinema Management ORM Project! This project provides a robust and flexible Object-Relational Mapping (ORM) solution for managing cinemas and related entities.
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+
+This project is a Cinema Management System developed using Java EE (JEE) technologies, with a backend implemented in Spring Boot and a frontend in Angular. It provides functionalities for managing cinemas, theaters, movies, projections, ticket sales, and more.
 
 ## Features
 
-- **Entity Management:** Define and manage cinema-related entities such as movies, theaters, showtimes, and more.
-- **Relationships:** Establish relationships between entities, such as the association between movies and theaters for specific showtimes.
-- **CRUD Operations:** Perform Create, Read, Update, and Delete operations on cinema-related data.
-- **ORM Integration:** Utilize Doctrine ORM for efficient database interactions and mapping.
+- **Cinema Management:** Create, update, and delete cinemas. View cinema details.
+- **Theater and Seat Management:** Manage theaters within cinemas, including seat arrangements.
+- **Movie Management:** Add, edit, and remove movies. Categorize movies.
+- **Projection Management:** Schedule movie projections in theaters.
+- **Ticket Sales:** Sell tickets for movie projections.
+- **Security:** Secure authentication and authorization using Spring Security and JSON Web Tokens (JWT).
 
+## Technologies Used
+
+- Backend:
+  - Spring Boot
+  - Spring Data JPA
+  - Hibernate
+  - Spring Security
+  - JSON Web Tokens (JWT)
+  
+- Frontend:
+  - Angular
+  - Angular Material
+  
+- Database:
+  - MySQL, PostgreSQL, or other supported databases
+  
 ## Getting Started
+
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
-- PHP 7.4 or higher
-- Composer installed
-- MySQL or another supported database
+- Java Development Kit (JDK)
+- Node.js and npm
+- Angular CLI
+- MySQL or PostgreSQL database
 
 ### Installation
 
-1. Clone the repository:
+1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/your-repo.git
+   git clone https://github.com/yourusername/cinema-management.git
    ```
 
-2. Install dependencies:
+2. **Backend setup:**
 
-   ```bash
-   composer install
-   ```
+   - Navigate to the `backend` directory.
+   - Configure your database connection in `application.properties`.
+   - Run the Spring Boot application:
 
-3. Configure your database connection in `config/packages/doctrine.yaml`.
+     ```bash
+     ./mvnw spring-boot:run
+     ```
 
-4. Run database migrations:
+3. **Frontend setup:**
 
-   ```bash
-   php bin/console doctrine:migrations:migrate
-   ```
+   - Navigate to the `frontend` directory.
+   - Install dependencies:
 
-### Usage
+     ```bash
+     npm install
+     ```
+   
+   - Run the Angular application:
 
-Explore the project's source code and documentation to understand how to use the ORM features for managing cinemas.
+     ```bash
+     ng serve
+     ```
 
-```php
-// Example code snippet
-// ...
-```
+4. **Access the application:**
 
-Refer to the [documentation](docs/) for detailed information.
+   - Open your browser and go to `http://localhost:4200`.
+
+## Usage
+
+- Use the frontend UI to navigate through different sections of the application (cinemas, theaters, movies, etc.).
+- Perform CRUD operations on cinemas, theaters, movies, and projections.
+- Manage ticket sales and view reports.
 
 ## Contributing
 
-If you want to contribute to this project, please follow the [Contribution Guidelines](CONTRIBUTING.md).
+If you'd like to contribute to this project, please follow the [Contribution Guidelines](CONTRIBUTING.md).
 
 ## License
 
@@ -62,8 +94,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- [Doctrine ORM](https://www.doctrine-project.org/) - A powerful PHP object-relational mapper.
-- [Symfony](https://symfony.com/) - A PHP framework used for building web applications.
-```
-
-Replace placeholders such as `yourusername/your-repo` with your actual GitHub username and repository name. Additionally, you can create a `CONTRIBUTING.md` file to provide guidelines for contributors and a `docs/` directory for more extensive documentation if needed.
+- [Spring Boot](https://spring.io/projects/spring-boot)
+- [Angular](https://angular.io/)
+- [Spring Security](https://spring.io/projects/spring-security)
